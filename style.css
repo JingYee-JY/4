@@ -55,7 +55,7 @@ p, a{
     height: 100%;
     z-index: 100;
     position: absolute;
-    background: url(./images/background.svg) center;
+    background-color: #CE0E2D;
 }
 
 .load_div{
@@ -643,6 +643,10 @@ small{
         height: 100%;
         background: white;
     }
+
+    .header{
+        z-index: 10000;
+      }
     
 }
 
