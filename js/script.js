@@ -1,3 +1,4 @@
+const loading = document.querySelector(".loading");
 const startButton = document.querySelector(".startButton")
 const start = document.querySelector(".start")
 const game = document.querySelector(".game")
@@ -19,6 +20,30 @@ let score;
 var owl = $(".owl-carousel");
 
 var objects = ["flower1", "flower2", "banana", "stone"]
+
+setTimeout(function() {
+    //your code to be executed after 1 second
+
+    document.body.style.display = "block"
+    onLoadSplash();
+
+}, 500);
+
+function onLoadSplash()
+{
+    console.log("Hi")
+    var delayInMilliseconds = 2000;
+    setTimeout(function() {
+        //your code to be executed after 1 second
+        console.log("test")
+        loading.classList.add("fade");
+        var delayInMilliseconds = 2000;
+        setTimeout(function() {
+            //your code to be executed after 1 second
+            loading.classList.add("hide")
+        }, delayInMilliseconds);
+    }, delayInMilliseconds);
+}
 
 startButton.addEventListener("click", () => {
     start.classList.add("hide")
